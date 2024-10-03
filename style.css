@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+/* basic css reset */
+:root{
+    --back-color: #FFEECB;
+    --border-color: #D8A31A;
+    --blue-color: #2576CD;
+    --box-color: #877455;
+}
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* float: right; */
+    align-items: center;
+    /* text-align: center; */
+    background-color: var(--blue-color);
+    border: 5px solid var(--border-color);
+    padding: 1rem;
+    font-size: 30px;
+}
+.logo{
+    max-height: 60px;
+    margin-right:auto;
+    height: 60px;
+    width:120px;
+}
+.nav-button {
+    display: flex;
+    gap: 3rem;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 40px;
+}
+.box {
+    background-color: var(--box-color);
+    width: 80%;
+    margin:10vh auto;
+    padding: 30px;
+    border: 5px solid var(--back-color);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 4;
+    color: white;
+}
+.center {
+    line-height:3;
+    text-align: center;
+}
+.box h1{
+    line-height:2;
+}
+.food p {
+    display: inline-block;
+    margin: 5px 0;
+}
+.item {
+    width: 75%;
+    text-align: left;
+}
+.price {
+    width: 25%;
+    text-align: right;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.menu-page {
+    background-image: url(./images/burger.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-page {
+    background-image: url(./images/milk_shake.jpg);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+}
+.home{
+    display: flex;
+}
+.home img{
+    max-width: 50vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.locations{
+        background-color: var(--blue-color);
+        margin:10vh auto;
+        padding: 30px;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        line-height: 4;
+        color: white;
+        margin-left: 10vw;
+        margin-bottom: 50px;
+        border: 5px solid var(--border-color)
+}
+.pics {
+    display: flex;
+    gap: 1rem;
+    margin-left: 9vw;
+}
+.pics img {
+    max-width: 10vw;
+    border: 5px solid var(--border-color)
+}
+.locations h1 {
+    text-align:center;
+}
+.about-page .box {
+    margin-top: 17vh;
+}
